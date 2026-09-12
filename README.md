@@ -212,27 +212,6 @@ from bestatml import BestatMLDataError, BestatMLConfigurationError
 
 Messages identify the problem and provide a concrete correction when possible. Wrapped lower-level failures retain their original cause for debugging.
 
-## Development
-
-Create a virtual environment and install the development dependencies:
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -e ".[dev]"
-```
-
-Run the main checks:
-
-```bash
-pytest
-ruff check .
-python -m build
-twine check dist/*
-```
-
-The tests cover estimator compliance, preprocessing, OOF behavior, ensemble execution, persistence, schema validation, and adversarial leakage behavior.
-
 ## Documentation
 
 The README is intentionally a practical introduction rather than the full reference manual. A separate documentation site can provide the exhaustive API reference, configuration reference, architecture notes, and tutorials in the future.
