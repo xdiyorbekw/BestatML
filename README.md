@@ -58,12 +58,10 @@ python -m pip install "bestatml[boosting]"
 Development install from GitHub/source:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/xdiyorbekw/BestatML.git
 cd BestatML
 python -m pip install -e ".[dev]"
 ```
-
-Replace `<your-repository-url>` with the actual repository URL when the project is hosted publicly.
 
 ## Quick Start
 
